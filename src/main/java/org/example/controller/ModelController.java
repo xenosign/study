@@ -9,9 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/model")
 public class ModelController {
-    @GetMapping("/{name}")
-    public String model(@PathVariable("name") String name, Model model) {
-        model.addAttribute("sendName", name);
+    @GetMapping("/name/{name}")
+    public String name(@PathVariable String name, Model model) {
+        model.addAttribute("name", name);
         return "model";
+    }
+
+    @GetMapping("/thing/{thing}")
+    public String test(@PathVariable("thing") String thing, Model model) {
+        model.addAttribute("thing", thing);
+        return "model2";
     }
 }

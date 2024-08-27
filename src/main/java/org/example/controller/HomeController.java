@@ -7,18 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Log4j
-@RequestMapping("/home")
+@RequestMapping("/")
 public class HomeController {
-    // /home
     @GetMapping("")
     public String home() {
         return "home";
     }
-
-    // /home/2
-    @GetMapping("/2")
-    public String home2() {
-        return "home2";
-    }
-
 }

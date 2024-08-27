@@ -4,6 +4,7 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello, ${sendName} world!</h1>
+    <h1>Hello, ${name} world!</h1>
 </body>
 </html>
+
